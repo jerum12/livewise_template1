@@ -10684,8 +10684,8 @@ ul.comment-list .as-comment-item:first-child > .as-post-comment {
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-linear-gradient(bottom, #07245f 0%, rgba(7, 36, 95, 0) 100%);
-  background: linear-gradient(0deg, #07245f 0%, rgba(7, 36, 95, 0) 100%);
+  /* background: -webkit-linear-gradient(bottom, #07245f 0%, rgba(7, 36, 95, 0) 100%);
+  background: linear-gradient(0deg, #07245f 0%, rgba(7, 36, 95, 0) 100%); */
   z-index: 1;
 }
 .project-card .project-content {
@@ -14768,3 +14768,189 @@ input.style-radious {
 .main-menu .active {
   color: var(--theme-color) !important;
 }
+
+
+
+/* 24. Shop Style One Start */
+.shop-style-one {
+  background: #f7f6f2;
+}
+.shop-style-one .product h3 {
+  font-size: 18px;
+}
+.shop-style-one .product h3 a {
+  color: #444;
+}
+.shop-style-one .product {
+  border: 1px solid #c1c1c1;
+  padding: 30px;
+  width: 81%;
+  background: white;
+}
+.shop-style-one .product .price-range span {
+  font-size: 20px;
+  font-family: 'Mont';
+  color: #000;
+}
+.shop-style-one .product .price-range {
+  margin-top: 3px;
+}
+.shop-style-one .p-slider .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.shop-style-one .p-slider .owl-dots button {
+  border: 1px solid #c1c1c1;
+  width: 70px;
+  height: 15px;
+  color: transparent;
+}
+.shop-style-one .p-slider .owl-dots button.active {
+  background: black;
+  border-color: black;
+}
+.shop-style-one .p-slider .product figure img {
+  width: 100%;
+  height: 290px;
+  object-fit: contain;
+}
+.shop-style-one .p-slider .owl-item.active.center .product {
+  margin: 50px 0 !important;
+}
+.shop-style-one .p-slider .owl-item.active.center .product figure img {
+  height: 200px;
+  object-fit: contain;
+}
+.shop-style-one.addition {
+  background: white;
+}
+.shop-style-one.addition .p-slider div:nth-child(even) .product img {
+  height: 200px;
+}
+.shop-style-one.addition .list .p-slider > div {
+  margin-bottom: 50px;
+  width: 28%;
+}
+.shop-style-one.addition .row.list > div {
+  width: 100%;
+}
+.shop-style-one.addition .row.list > div .product figure img {
+  width: 150px;
+  height: 150px;
+}
+.shop-style-one.addition .row.list > div .product {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 70px;
+  margin-bottom: 30px;
+}
+.shop-style-one.addition .row.list > div .product .data {
+  border-left: 1px solid #c1c1c1;
+  padding: 30px 40px;
+}
+.shop-style-one.addition .row.list > div .product .theme-btn:hover {
+  color: black;
+}
+.shop-style-one.addition .product .theme-btn {
+  display: none;
+}
+.shop-style-one.addition .row.list > div .product .theme-btn {
+  display: block;
+}
+.shop-style-one.addition .row.list > div .product .main-data {
+  display: flex;
+  align-items: center;
+}
+.shop-style-one.addition .shop-filter {
+  border: 1px solid #c1c1c1;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.shop-style-one.addition .shop-filter > p {
+  line-height: 27px;
+}
+.shop-style-one.addition .shop-filter .gird-list a {
+  font-size: 30px;
+  padding: 0 20px;
+}
+.shop-style-one.addition .shop-filter .gird-list a.grid {
+  padding-right: 0;
+  position: relative;
+}
+.shop-style-one.addition .shop-filter .gird-list a i {
+  color: black;
+}
+.shop-style-one.addition .shop-filter .gird-list {
+  position: relative;
+  padding: 10px 0;
+}
+.shop-style-one.addition .shop-filter .gird-list a.grid:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #c1c1c1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.shop-style-one.addition .product {
+  width: 100%;
+}
+.shop-style-one.addition .grid .product .btn-hover .theme-btn {
+  display: block;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) translateX(-10px);
+  left: 50%;
+  padding: 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+.shop-style-one.addition .grid .product .btn-hover,
+.shop-style-one.addition .grid .product .btn-hover figure {
+  position: relative;
+}
+.shop-style-one.addition .grid .product .btn-hover .theme-btn:after {
+  border-top: 65px solid #f6f6f6;
+}
+.shop-style-one.addition .grid .product .btn-hover .theme-btn:hover {
+  color: #000;
+  background: #f6f6f6;
+}
+.shop-style-one.addition .grid .product:hover .btn-hover .theme-btn {
+  transform: translate(-50%, -50%) translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.shop-style-one.addition .grid .product .btn-hover figure:before {
+  content: '';
+  background: white;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.shop-style-one.addition .grid .product:hover {
+  /* width: 100%;
+  opacity: 0.7;
+  visibility: visible; */
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+.shop-style-one.addition .list .product .btn-hover .theme-btn,
+.shop-style-one.addition .list .product .btn-hover figure:before {
+  display: none !important;
+}
+/* 24. Shop Style One End */
