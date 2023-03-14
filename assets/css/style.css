@@ -1592,16 +1592,51 @@ textarea.is-invalid {
   display: block;
   margin: 0 auto 10px auto;
 }
+
+@keyframes fadeup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+
+  display: inline-block;
+  position: relative;
+  /* background: var(--theme-color); */
+  box-sizing: border-box;
+
+  -webkit-animation: fadeup 1s linear infinite;
+  animation: fadeup 1s linear infinite;
+  background: url('../img/last.png');
+  background-repeat: no-repeat;
+}
+/* }
 .loader {
   width: 48px;
   height: 48px;
   display: inline-block;
   position: relative;
-  background: var(--theme-color);
+  background: var(--theme-color); 
   box-sizing: border-box;
   -webkit-animation: flipX 1s linear infinite;
   animation: flipX 1s linear infinite;
-}
+}*/
 @-webkit-keyframes flipX {
   0% {
     -webkit-transform: perspective(200px) rotateX(0deg) rotateY(0deg);
@@ -14768,8 +14803,6 @@ input.style-radious {
 .main-menu .active {
   color: var(--theme-color) !important;
 }
-
-
 
 /* 24. Shop Style One Start */
 .shop-style-one {
